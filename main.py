@@ -23,7 +23,7 @@ class Money(Resource):
         params = parser.parse_args()
         for quote in dataMoney:
             if id == quote["id"]:
-                return f"Quote with id {id} already exists", 400
+                return f"Record with id {id} already exists", 400
         record = {
             "id": int(id),
             "type": params["type"],
